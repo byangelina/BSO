@@ -80,6 +80,26 @@ color: rgb(255, 255, 255);
 }
 
 
+
+.titulos h2 {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+
+    animation: typing 2s steps(14), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes blink{
+    50% { border-color: transparent }
+}
+
+
+
+
 /*3 contenedores con los iconos*/
 .contenedores{
     display: flex;
@@ -89,14 +109,13 @@ color: rgb(255, 255, 255);
     padding: 3.5rem 0 5rem;
 }
 
-
 /*seccion de la introduccion*/
 .introduccion{
-    padding: 20% 20% 10%;
+    padding: 18% 20% 10%;
 }
 .icono-texto{
     padding: 5rem 6rem;
-    margin: 0.5rem 4rem 4rem;
+    margin: 6rem 4rem 4rem;
     /*color de las 3 cartitas*/background-color: rgb(255, 255, 255); 
     border: 1px;
     border-radius: 10px;
