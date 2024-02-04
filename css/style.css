@@ -259,7 +259,6 @@ color: rgb(255, 255, 255);
 .papers{
     text-align: center;
 }
-
 .fondo-titulo{
     color: white;
     background-color:rgb(169, 202, 240);
@@ -276,7 +275,7 @@ color: rgb(255, 255, 255);
     text-align: left;
 }
 .contenido-papers{
-    padding: 5% 20% 10%;
+    padding: 5% 20% 3rem;
 }
 .contenido-apuntes{
         padding: 5% 20% 10%;
@@ -286,4 +285,40 @@ color: rgb(255, 255, 255);
 }
 .contenido-lecturas{
         padding: 5% 20% 10%;
+}
+
+/*gid / lista de papers*/
+.contenido-papers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5rem;
+    justify-items: center;
+}
+.paper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.paper p{
+    text-align:left;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.paper h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(88, 146, 212);
+}
+hr{
+    width:60%;
+    height: 0.1px;
+    background: rgb(216, 234, 255);
+    border-color: transparent;
+}
+.paper span{
+    color: rgb(69, 151, 245);
+    font-weight: 500;
 }
