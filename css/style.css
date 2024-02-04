@@ -126,10 +126,16 @@ color: rgb(255, 255, 255);
     align-items: center;
     align-items: center;
 
-        overflow: hidden;
-            cursor: default;
-            transition: all 400ms ease;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+    cursor: default;
 }
+
+.icono-texto:hover{
+    transform: scale(0.93);
+}
+
 .icono-texto h3{
     font-weight: 600;
     margin-bottom: 0;
