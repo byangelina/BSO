@@ -1,80 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,300;1,400;1,500;1,600&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: black;
 }
 
-header div img{
+
+/*menu del sitio web*/
+.logo img{
     width: 280px;
     height: 100%;
     padding-right: 3rem;
 }
-
+.logo{
+    padding: 0;
+    margin: 0;
+}
 header{
     display: flex;
     align-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 2rem 3rem;
+    justify-content: space-around;
+    padding: 0.5rem 3rem 0.3rem;
 }
-
 nav{
     display: flex;
     align-items: center;
 }
-
 a{
     margin: 10px;
     text-decoration: none;
 }
-
 ul{
     display: flex;
 }
-
 ul li{
     margin: 0.5rem;
     list-style: none;
 }
-
 ul li a{
     color: rgb(65, 65, 65);
     font-size: 16px;
 }
-
 li a span{
-    font-weight: 700;
-    color: black;
+    font-weight: bolder;
+    color: rgb(43, 43, 43);
 }
 
+
+
+/*portada benjita*/
 .portada {
     position: relative;
-    padding: 4rem;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
 
 }
-
 .portada .titulos h2 {
     margin: 0;
     font-size: 3.5rem;
     padding: 2rem 2rem 0;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
-
-
 .titulos p {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding: 0.5rem 2rem 2rem;
+    font-weight: 200;
+    margin: 0;
+}
+.portada .titulos{
+padding-top: 6%;
+padding-left: 10%;
+color: rgb(255, 255, 255);
 }
 
-.titulos{
-padding-top: 8%;
-padding-left: 5%;
+
+/*3 contenedores con los iconos*/
+.contenedores{
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: center;
+    padding: 3.5rem 0 5rem;
+}
+
+
+/*seccion de la introduccion*/
+.introduccion{
+    padding: 20% 20% 10%;
+}
+.icono-texto{
+    padding: 5rem 6rem;
+    margin: 0.5rem 4rem 4rem;
+    /*color de las 3 cartitas*/background-color: rgb(255, 255, 255); 
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.123);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+        overflow: hidden;
+            cursor: default;
+            transition: all 400ms ease;
+}
+.icono-texto h3{
+    font-weight: 600;
+    margin-bottom: 0;
+    color: rgb(120, 153, 190);
+}
+.icono-texto img{
+    width: 55px;
+    margin: 0;
+}
+/*.fondo-vacio{
+    background-color: rgb(59, 59, 59);
+    padding-top: 5rem;
+}*/
+.texto-intro p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.texto-intro h1{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: rgb(120, 153, 190);    
+    margin: 2rem 0 3rem;
+}
+.final-texto{
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.cv a img{
+    width: 23px;
+    margin-left: 0.5rem;
+}
+.cv a{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.cv{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    background-color:rgb(169, 202, 240);
+}
+
+
+
+/*boton de la seccion introduccion*/
+.boton{
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-evenly;
+}
+.boton .cv a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+/*PIE DE PAGINA*/
+.pie-de-pagina{
+    padding: 8% 20% 2rem;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+.titulo-presentacion{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.titulo-contacto{
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: right;
+}
+.pie-de-pagina p{
+    font-size: 1.2rem;
+}
+.rrss-y-texto{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+.parrafo-breve{
+    font-weight: 200;
+}
+.redes-sociales{
+    margin: 1rem;
+}
+.contenido-rrss{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contenido-rrss a{
+    margin-left: 3rem;
+}
+.copyright{
+    text-align: center;
+}
+.icono-footer{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+}
+
+
+
+/*pagina papers*/
+.papers{
+    text-align: center;
+}
+
+.fondo-titulo{
+    color: white;
+    background-color:rgb(169, 202, 240);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.fondo-titulo h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.3rem;
+}
+.papers h3{
+    text-align: left;
+}
+.contenido-papers{
+    padding: 5% 20% 10%;
+}
+.contenido-apuntes{
+        padding: 5% 20% 10%;
+}
+.contenido-codigo{
+        padding: 5% 20% 10%;
+}
+.contenido-lecturas{
+        padding: 5% 20% 10%;
 }
