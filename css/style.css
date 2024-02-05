@@ -132,9 +132,18 @@ color: rgb(255, 255, 255);
     cursor: default;
 }
 
-.icono-texto:hover{
+.contenedores .icono-texto:hover {
+    background-color: #242424;
     transform: scale(0.93);
+    cursor: pointer;
+    color: white;   
+    }
+.contenedores .icono-texto h3:hover{
+    cursor:default;
+    color: white;
 }
+
+
 
 .icono-texto h3{
     font-weight: 500;
