@@ -33,18 +33,18 @@ a{
     margin: 10px;
     text-decoration: none;
 }
-ul{
+nav ul{
     display: flex;
 }
-ul li{
+nav ul li{
     margin: 0.5rem;
     list-style: none;
 }
-ul li a{
+nav ul li a{
     color: rgb(65, 65, 65);
     font-size: 16px;
 }
-li a span{
+nav ul li a span{
     font-weight: bolder;
     color: rgb(43, 43, 43);
 }
@@ -87,7 +87,7 @@ color: rgb(255, 255, 255);
     border-right: 4px solid;
     width: 12ch;
 
-    animation: typing 2s steps(14), blink .5s infinite step-end alternate;
+    animation: typing 2s steps(15), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
 @keyframes typing {
@@ -277,15 +277,8 @@ color: rgb(255, 255, 255);
 .contenido-papers{
     padding: 5% 20% 3rem;
 }
-.contenido-apuntes{
-        padding: 5% 20% 10%;
-}
-.contenido-codigo{
-        padding: 5% 20% 10%;
-}
-.contenido-lecturas{
-        padding: 5% 20% 10%;
-}
+
+
 
 /*gid / lista de papers*/
 .contenido-papers{
@@ -321,4 +314,62 @@ hr{
 .paper span{
     color: rgb(69, 151, 245);
     font-weight: 500;
+}
+
+
+
+
+
+/*página apuntes*/
+.contenido-apuntes {
+    padding: 5% 20% 10%;
+}
+
+
+
+
+
+/*página código*/
+.contenido-codigo {
+    padding: 5% 20% 10%;
+}
+
+
+
+
+
+/*página actividades*/
+.actividades {
+    padding: 3% 30% 10%;
+}
+.contenido-actividades{
+    padding-top: 3rem;
+}
+.actividades h1{
+    font-size: 1.6;
+    font-weight: 600;
+    color: rgb(163, 163, 163);
+    text-align: center;
+}
+.contenido-actividades h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.contenido-actividades h4{
+    font-weight: 600;
+    margin: 0;
+    color:rgb(127, 174, 224);
+}
+.contenido-actividades p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.contenido-actividades ul{
+    color: rgb(152, 154, 156);
+    font-weight: 300;
+}
+.contenido-actividades ul li span{
+    font-weight: 600;
+    color: rgb(127, 174, 224);
 }
