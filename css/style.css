@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
 body{
     margin: 0;
@@ -113,9 +114,6 @@ color: rgb(255, 255, 255);
 .introduccion{
     padding: 18% 20% 10%;
 }
-.cv{
-
-}
 .icono-texto{
     padding: 5rem 6rem;
     margin: 6rem 4rem 4rem;
@@ -134,7 +132,6 @@ color: rgb(255, 255, 255);
     transition: all 400ms ease;
     cursor: default;
 }
-
 .contenedores .icono-texto:hover {
     background-color: #242424;
     transform: scale(0.93);
@@ -145,9 +142,6 @@ color: rgb(255, 255, 255);
     cursor:default;
     color: white;
 }
-
-
-
 .icono-texto h3{
     font-weight: 500;
     margin-bottom: 0;
@@ -349,12 +343,21 @@ hr{
 
 
 
+
+
 /*página código*/
 .codigo{
-    color: rgb(236, 236, 236);   
-    background-color:rgb(34, 34, 34);
-    padding: 5% 20% 10%;
+    color: rgb(29, 29, 29);   
+    background-color:rgb(255, 255, 255);
+    padding: 2% 20% 2%;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.contenido-codigo{
+    margin: 3rem;
 }
 .contenido-codigo h1{
     font-weight: 600;
@@ -362,14 +365,20 @@ hr{
     font-size: 1.8rem;
 }
 .contenido-codigo p{
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.1rem;
 }
-
-
-
-
-/*Cuadritos: lenguajes de programacion*/
+.contenido-codigo span{
+    color: rgb(122, 159, 202);
+    font-weight: 500;
+}
+.linea-body-codigo{
+    width: 80%;
+    height: 0.1px;
+    background: rgb(216, 234, 255);
+    border-color: transparent;
+}
+/*ladrillos: lenguajes de programacion*/
 .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -377,9 +386,12 @@ hr{
 }
 .about__content-title {
     font-weight: 500;
-    font-size: 1.4rem;
-    margin: 5rem 0 3rem;
-    color: rgb(240, 240, 240);    
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+    color: rgb(122, 122, 122);    
+}
+.programas{
+    margin: 2rem;
 }
 .about__content-details-para {
     font-size: 1.8rem;
@@ -406,14 +418,14 @@ hr{
     flex-wrap: wrap
 }
 .skills__skill {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0.8rem;
     margin-right: 1.5rem;
     background: rgba(153, 153, 153, .2);
     border-radius: 5px;
     font-weight: 500;
-    font-size: 1.2rem;
-    color:#1e1e1e;
+    font-size: 1rem;
+    color:#7ea7e1;
 }
 .skills__skill:hover {
     background-color: #93b2ec;
@@ -424,6 +436,69 @@ hr{
 
 
 
+/*codigo desarrollado por benjita*/
+.codigo-desarrollado{
+    padding: 2% 20% 2%;
+}
+/*gid / lista de codigos*/
+.contenedor-codigo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+.detalles-del-proyecto p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.el-codigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    color: rgb(54, 54, 54);
+    padding: 1rem;
+    margin: 2rem 2rem 4rem;
+    width: 100%;
+    height: 500px;
+overflow-y: scroll;
+    }
+.el-codigo p {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300px;
+    font-family: 'PT Mono', monospace;
+    line-height: 1.5;
+    margin: 2rem;
+}
+.detalles-del-proyecto{
+    margin:3rem ;
+}
+.detalles-del-proyecto h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(122, 122, 122);
+}
+.el-codigo h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(135, 176, 223);
+}*/
+hr {
+    width: 60%;
+    height: 0.1px;
+    background: rgb(216, 234, 255);
+    border-color: transparent;
+}
+.el-codigo span {
+    color: rgb(124, 171, 224);
+    font-weight: 500;
+}
 
 
 
