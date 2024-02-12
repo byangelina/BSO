@@ -16,14 +16,13 @@
             <img src="../img/logo/logo4.png" alt="logo BSO">
         </div>
         <nav>
-
             <ul>
                 <li><a href="../index.html"><span>Inicio</span></a></li>
                 <li><a href="./papers.html">Papers</a></li>
                 <li><a href="./actividades.html">CV</a></li>
                 <li><a href="./codigo.html">Código</a></li>
                 <li><a href="./apuntes.html">Apuntes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" id="cursos-link">Cursos</a></li>
             </ul>
             <div id="searchform-dropdown" class="header-searchform-wrap clr">
                 <form method="get" class="searchform" id="searchform" action="https://benjaminmoll.com/">
@@ -31,33 +30,18 @@
                 </form>
             </div>
             <div>
-
-                <!-- #searchform-dropdown -->
-
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="papers">
-            <div class="fondo-titulo">
-                <h1>PAPERS REALIZADOS</h1>
-            </div>
-            <div class="contenido-papers">
-                <h3></h3>
-                <p></p>
+        <!-- Ventana emergente para "Cursos" -->
+        <div class="overlay" id="overlay">
+            <div class="popup">
+                <span class="close-btn" onclick="closePopup()">X</span>
+                <h2>Próximamente</h2>
+                <p>Estoy trabajando en esta sección. ¡Vuelve pronto!</p>
             </div>
         </div>
-    </main>
-
-    <section>
-
-    </section>
-
-
-
-
-
 
 
 
@@ -110,6 +94,8 @@
         </div>
     </footer>
     
+    <script src="../javascript/cursos.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>

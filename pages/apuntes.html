@@ -7,6 +7,32 @@
     <meta name="description" content="Breve descripción de tu sitio web">
     <meta name="keywords" content="Palabras clave relacionadas con tu contenido">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+        integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },
+                    { left: '\\[', right: '\\]', display: true }
+                ],
+                // • rendering keys, e.g.:
+                throwOnError: false
+            });
+        });
+    </script>
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -23,7 +49,7 @@
                 <li><a href="./actividades.html">CV</a></li>
                 <li><a href="./codigo.html">Código</a></li>
                 <li><a href="./apuntes.html">Apuntes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" id="cursos-link">Cursos</a></li>
             </ul>
             <div id="searchform-dropdown" class="header-searchform-wrap clr">
                 <form method="get" class="searchform" id="searchform" action="https://benjaminmoll.com/">
@@ -38,111 +64,40 @@
         </nav>
     </header>
 
-    <section class="codigo">
-        <div class="contenido-codigo">
+    <!-- Ventana emergente para "Cursos" -->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="close-btn" onclick="closePopup()">X</span>
+            <h2>Próximamente</h2>
+            <p>Estoy trabajando en esta sección. ¡Vuelve pronto!</p>
+        </div>
+    </div>
+
+    <section class="apuntes-mate">
+        <div class="contenido-mate">
             <div class="img-y-titulo">
                 <h1>Matemática aplicada</h1>
                 <img src="../img/iconos/estadisticas.png" alt="">
             </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati
-                molestias, <span>corporis quo?</span> Aut, at similique! Qui molestias autem eos porro laboriosam, esse
-                saepe recusandae! Odit Lorem ipsum dolor sit <span>amet consectetur.</span>
-                <br>
-                <br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati
-                molestias,
-                <span>corporis quo?</span> Aut, at similique! Qui molestias autem eos porro laboriosam, esse saepe
-                recusandae! Odit
-                Lorem ipsum dolor sit <span>amet consectetur.</span> <br><br>um nam consectetur dolore odit doloribus
-                officia,
-                accusantium libero!.
+            <p>Lorem ipsum dolor, <span>sit amet</span> consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati
+                molestias, corporis quo? Aut, at similique! Qui molestias autem eos porro laboriosam, esse saepe recusandae! Odit Lorem ipsum dolor sit <span>amet consectetur.</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati molestias, <span>corporis quo?</span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span> recusandae! Odit Lorem ipsum dolor sit amet consectetur. Um nam consectetur dolore odit doloribus
+                officia, accusantium libero!.
                 <br>
                 <br>
             </p>
+            <div class="detalles-mate">
+                <h3>Nombre del proyecto de mate</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur <span>adipisicing elit.</span> Quia fugiat ad non atque repellat obcaecati. Lorem ipsum dolor, <span>sit amet</span> consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati molestias, corporis quo? Aut, at similique! Qui molestias autem eos porro laboriosam, esse saepe recusandae! Odit Lorem ipsum dolor sit <span>amet consectetur.</span>
+                <br>
+                <br>
+                $$ \int f(x) dx $$
+                </p>
+                <p>Lorem ipsum dolor sit, </span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span> recusandae! Odit Lorem ipsum dolor sit amet consectetur. <br><br>um nam consectetur dolore odit doloribus
+                officia, accusantium  </span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span> recusandae! Odit Lorem ipsum dolor sit amet consectetur. <br><br>um nam consectetur dolore odit doloribus officia, accusantium \(int f(x) dx \) qui molestias autem eos porro laboriosam, esse.</p>
+            </div>
         </div>
     </section>
-    <section class="grids-mate">
-        <div class="contenedor-grid-mate">
-                <!--fila 1-->
-                <div class="fila-mate1">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="fila-mate1">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="fila-mate1">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                <!--fila 2-->
-                <div class="fila-mate2">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="fila-mate2">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="fila-mate2">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                <!--fila 3-->
-                <div class="fila-mate3">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="fila-mate3">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="fila-mate3">
-                    <div class="contenedor-proyecto">
-                        <div class="contenido-proyecto">
-                            <h4>proyecto</h4>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
+
 
 
 
@@ -202,6 +157,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../javascript/cursos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

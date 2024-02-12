@@ -69,7 +69,7 @@ nav ul li a span{
     text-transform: uppercase;
 }
 .titulos p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 0.5rem 2rem 2rem;
     font-weight: 200;
     margin: 0;
@@ -156,7 +156,7 @@ color: rgb(255, 255, 255);
     padding-top: 5rem;
 }*/
 .texto-intro p{
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.1rem;
     text-align: justify;
     margin-bottom: 2rem;
@@ -164,15 +164,15 @@ color: rgb(255, 255, 255);
 .texto-intro h1{
     font-weight: 600;
     font-size: 1.8rem;
-    color: rgb(120, 153, 190);    
+    color:rgb(158, 200, 255);
     margin: 2rem 0 3rem;
 }
 .texto-intro p span{
-    color: rgb(122, 159, 202);
+    color: rgb(124, 171, 224);
     font-weight: 500;
 }
 .final-texto{
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.2rem;
     text-align: justify;
     margin-bottom: 2rem;
@@ -335,12 +335,12 @@ color: rgb(255, 255, 255);
 .paper p{
     text-align:left;
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 .paper h3{
     font-size: 1.8rem;
     font-weight: 600;
-    color: rgb(135, 176, 223);
+    color:rgb(158, 200, 255);
 }
 hr{
     width:60%;
@@ -362,7 +362,7 @@ hr{
 .lecturas h3{
     font-size: 1.8rem;
     font-weight: 600;
-    color: rgb(135, 176, 223);
+    color: rgb(158, 200, 255);
 }
 .contenido-documento{
     display: flex;
@@ -400,7 +400,7 @@ hr{
 }
 .fila-1 h4{
     font-weight: 600;
-    color:rgb(124, 171, 224);
+    color:rgb(158, 200, 255);
     text-align: left;
 }
 .fila-2 h4, .fila-3 h4{
@@ -421,8 +421,15 @@ hr{
 
 
 /*página apuntes*/
-.contenido-apuntes {
-    padding: 5% 20% 10%;
+.apuntes-mate{
+    padding: 2% 20% 5%;
+}
+.contenido-mate {
+    margin: 3rem;
+}
+.contenido-mate p{
+    font-size: 1.1rem;
+    font-weight: 200;
 }
 .img-y-titulo{
     display: flex;
@@ -431,9 +438,12 @@ hr{
 }
 .img-y-titulo h1{
     margin-right: 2rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: rgb(158, 200, 255);
 }
-.img-y-titulo p span{
-    color: rgb(122, 159, 202);
+.contenido-mate p span{
+    color:rgb(124, 171, 224);
     font-weight: 500;
 }
 .img-y-titulo img{
@@ -462,7 +472,14 @@ hr{
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
-
+.detalles-mate h3{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #666;
+}
+.detalles-mate{
+    margin: 4rem 0 3rem 0;
+}
 
 
 
@@ -574,7 +591,7 @@ hr{
     font-weight: 200;
 }
 .detalles-del-proyecto p span{
-    color: rgb(122, 159, 202);
+    color: rgb(124, 171, 224);
     font-weight: 500;
 }
 .el-codigo {
@@ -733,5 +750,43 @@ pre[class*=language-] {
 }
 .contenido-actividades ul li span{
     font-weight: 600;
-    color: rgb(127, 174, 224);
+    color: rgb(124, 171, 224);
+}
+
+
+
+
+/*Página cursos*/
+/* Estilos para la ventana emergente */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.352);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.383);
+    text-align: center;
+    position: relative;
+    /* Importante para posicionar el botón de cerrar correctamente */
+}
+.popup h2{
+    font-weight: 500;
+    color: #7ea7e1;
+}
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000000;
 }
