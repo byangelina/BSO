@@ -387,8 +387,13 @@ hr{
     margin-top: 4rem;
     justify-content: space-around;
 }
-.contenido-lecturas{
-
+.lecturas p{
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.lecturas p span{
+    color: rgb(124, 171, 224);
+    font-weight: 500;
 }
 .documentos{
     margin:0;
@@ -485,7 +490,10 @@ hr{
     font-weight: 200;
     font-size: 1.1rem;
 }
-
+.contenido-codigo p span{
+    color: rgb(124, 171, 224);
+    font-weight: 500;
+}
 .linea-body-codigo{
     width: 80%;
     height: 0.1px;
