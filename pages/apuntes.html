@@ -19,16 +19,12 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             renderMathInElement(document.body, {
-                // customised options
-                // • auto-render specific keys, e.g.:
                 delimiters: [
-                    { left: '$$', right: '$$', display: true },
-                    { left: '$', right: '$', display: false },
-                    { left: '\\(', right: '\\)', display: false },
-                    { left: '\\[', right: '\\]', display: true }
-                ],
-                // • rendering keys, e.g.:
-                throwOnError: false
+                    { left: '\\begin{equation}', right: '\\end{equation}', display: true },
+                    { left: '$$', right: '$$', display: true},
+                    { left: '$', right: '$', display: false},
+                    { left: '\\(', right: '\\)', display: false}
+                ]
             });
         });
     </script>
@@ -93,8 +89,39 @@
                 <br>
                 $$ \int f(x) dx $$
                 </p>
-                <p>Lorem ipsum dolor sit, </span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span> recusandae! Odit Lorem ipsum dolor sit amet consectetur. <br><br>um nam consectetur dolore odit doloribus
-                officia, accusantium  </span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span> recusandae! Odit Lorem ipsum dolor sit amet consectetur. <br><br>um nam consectetur dolore odit doloribus officia, accusantium \(int f(x) dx \) qui molestias autem eos porro laboriosam, esse.</p>
+                <p>Lorem ipsum dolor sit, </span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span> recusandae! Odit Lorem ipsum dolor sit amet consectetur. Um nam consectetur dolore odit doloribus esse <span>saepe</span> recusandae! Odit Lorem ipsum dolor sit amet consectetur. Um nam consectetur dolore odit doloribus officia, accusantium \(int f(x) dx \) qui molestias autem eos porro laboriosam, esse.
+                <br>
+                <br>
+                $$ \sum _{n=1} ^\infty b_n $$
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut architecto nostrum reiciendis quisquam impedit tenetur officia neque! Velit delectus animi dolore earum eius quibusdam dignissimos, error quod voluptatibus enim suscipit!
+                    <br>
+                    <br>
+
+                    $$ \begin{pmatrix}
+
+                    6 & 3 & 8 \\
+                    7 & 4 & 10 \\
+                    2 & 0 & 10 \\
+
+                    \end{pmatrix} $$
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur <span>adipisicing elit.</span> Quia fugiat ad non atque repellat obcaecati. Lorem ipsum dolor, <span>sit amet</span> consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati
+                    molestias, corporis quo? Aut, at similique! Qui molestias autem eos porro laboriosam, esse saepe recusandae! Odit Lorem ipsum dolor sit <span>amet consectetur.</span>
+                    <br>
+                    <br>
+                
+                \begin{equation}
+                \begin{aligned}
+                    f(x) & = (x-2) (x+2) \\
+                        & = x^2 - 2^2 \\
+                        & = x^2 - 4
+                \end{aligned}
+                \end{equation}
+
+                </p>
             </div>
         </div>
     </section>

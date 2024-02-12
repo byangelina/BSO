@@ -115,7 +115,7 @@ color: rgb(255, 255, 255);
     padding: 18% 20% 10%;
 }
 .icono-texto{
-    padding: 5rem 6rem;
+    padding: 4rem 5rem;
     margin: 6rem 4rem 4rem;
     /*color de las 3 cartitas*/background-color: rgb(255, 255, 255); 
     border: 1px;
@@ -430,6 +430,7 @@ hr{
 .contenido-mate p{
     font-size: 1.1rem;
     font-weight: 200;
+    margin: 2rem;
 }
 .img-y-titulo{
     display: flex;
@@ -480,8 +481,10 @@ hr{
 .detalles-mate{
     margin: 4rem 0 3rem 0;
 }
-
-
+/*fórmulas matemáticas*/
+.katex-html .base{
+    color: #000000 !important;
+}
 
 
 /*página código*/
@@ -741,7 +744,7 @@ pre[class*=language-] {
     color:rgb(127, 174, 224);
 }
 .contenido-actividades p{
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1rem;
 }
 .contenido-actividades ul{
