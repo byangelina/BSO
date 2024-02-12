@@ -778,9 +778,16 @@ pre[class*=language-] {
     position: relative;
     /* Importante para posicionar el botón de cerrar correctamente */
 }
+.popup img{
+    width: 50px;
+}
 .popup h2{
     font-weight: 500;
-    color: #7ea7e1;
+    color: rgb(138, 192, 240);
+    margin-top: 3px;
+}
+.popup p{
+    margin: 10px;
 }
 .close-btn {
     position: absolute;
