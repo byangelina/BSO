@@ -142,12 +142,12 @@ color: rgb(255, 255, 255);
     cursor:default;
     color: white;
 }
-.icono-texto h3{
+.icono-texto a h3{
     font-weight: 500;
     margin-bottom: 0;
     color: rgb(90, 90, 90);
 }
-.icono-texto img{
+.icono-texto a img{
     width: 75px;
     margin: 0;
 }
@@ -274,16 +274,15 @@ color: rgb(255, 255, 255);
     text-align: center;
 }
 .fondo-titulo{
-    color: white;
-    background-color:rgb(169, 202, 240);
+    color: rgb(163, 163, 163);
     display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    justify-content: flex-start;
 }
 .fondo-titulo h1{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    margin: 0.5rem;
+    margin:0 0 0 20%;
 }
 .papers h3{
     text-align: left;
@@ -291,6 +290,30 @@ color: rgb(255, 255, 255);
 .contenido-papers{
     padding: 5% 20% 3rem;
 }
+
+
+
+/*botón para descargar paper*/
+.texto-y-boton{
+    display: flex;
+    align-items: center;
+}
+.descargar-paper{
+    margin-left: 1.8rem;
+    height: 30px;
+    background-color: transparent;
+    border: transparent;    
+    padding: 0;
+}
+.descargar-paper img{
+    width: 23px;
+
+}
+.descargar-paper a{
+    margin: 0;
+}
+
+
 
 
 
@@ -329,6 +352,64 @@ hr{
     color: rgb(124, 171, 224);
     font-weight: 500;
 }
+
+
+
+/*pagina de lecturas*/
+.lecturas{
+    padding: 5% 20% 10% 30%;
+}
+.lecturas h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(135, 176, 223);
+}
+.contenido-documento{
+    display: flex;
+    flex-direction: column;
+}
+.contenido-documento h4{
+    margin: 0;
+}
+.contenido-documento p{
+    margin: 0;
+    font-weight: 200;
+    color: #838383;
+}
+.contenido-documento img{
+    width:32px ;
+}
+.listado-documentos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1.8rem;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+.contenido-lecturas{
+
+}
+.documentos{
+    margin:0;
+}
+.fila-1 h4{
+    font-weight: 600;
+    color:rgb(124, 171, 224);
+    text-align: left;
+}
+.fila-2 h4, .fila-3 h4{
+    font-weight: 400;
+    color: #2f2f2f;
+}
+.fila-1, .fila-2, .fila-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
 
 
 
@@ -515,7 +596,7 @@ pre[class*=language-] {
 }
 :not(pre)>code[class*=language-],
 pre[class*=language-] {
-    background: #2d2d2d;
+    background: #ffffff;
 }
 pre[class*=language-] {
     padding: 1em;
@@ -525,9 +606,28 @@ pre[class*=language-] {
 }
 
 
+/*estilos para el botón ver más*/
+.ver-mas a {
+    margin:5px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #2f2f2f;
+    font-family: 'Poppins', sans-serif;
+}
 
+.ver-mas {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(225, 225, 225);
+}
 
-
+.ver-mas:hover {
+    cursor: pointer;
+    background: rgb(211, 211, 211);
+}
 
 
 
@@ -541,7 +641,7 @@ pre[class*=language-] {
     padding-top: 2.5rem;
 }
 .actividades h1{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: rgb(163, 163, 163);
     text-align: left;
