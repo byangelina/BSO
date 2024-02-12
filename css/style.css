@@ -382,7 +382,7 @@ hr{
 .listado-documentos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+        grid-template-rows: repeat(1, 1fr);
     gap: 1.8rem;
     margin-top: 4rem;
     justify-content: space-around;
@@ -419,8 +419,44 @@ hr{
 .contenido-apuntes {
     padding: 5% 20% 10%;
 }
-
-
+.img-y-titulo{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: flex-start
+}
+.img-y-titulo h1{
+    margin-right: 2rem;
+}
+.img-y-titulo p span{
+    color: rgb(122, 159, 202);
+    font-weight: 500;
+}
+.img-y-titulo img{
+    width: 90px;
+}
+.contenedor-grid-mate{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1.8rem;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.grids-mate{
+    padding: 2% 20% 10%;
+}
+.contenido-proyecto{
+    background-color: rgb(242, 242, 242);
+    padding: 4rem;
+    border-radius: 10px;
+}
+.contenedor-proyecto h4{
+    color: black;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
 
 
 
@@ -446,13 +482,10 @@ hr{
     font-size: 1.8rem;
 }
 .contenido-codigo p{
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.1rem;
 }
-.contenido-codigo span{
-    color: rgb(122, 159, 202);
-    font-weight: 500;
-}
+
 .linea-body-codigo{
     width: 80%;
     height: 0.1px;
@@ -530,7 +563,11 @@ hr{
 }
 .detalles-del-proyecto p{
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 200;
+}
+.detalles-del-proyecto p span{
+    color: rgb(122, 159, 202);
+    font-weight: 500;
 }
 .el-codigo {
     background-color: #f0f0f0;
@@ -570,6 +607,27 @@ hr {
     color: rgb(124, 171, 224);
     font-weight: 500;
 }
+.grafico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.grafico p{
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin: 3rem;
+}
+.grafico p span{
+    color: rgb(122, 159, 202);
+    font-weight: 500;
+}
+.grafico img{
+    width: 75%;
+    margin: 2.5rem;
+}
+
 
 
 
@@ -606,6 +664,7 @@ pre[class*=language-] {
 }
 
 
+
 /*estilos para el botón ver más*/
 .ver-mas a {
     margin:5px;
@@ -614,7 +673,6 @@ pre[class*=language-] {
     color: #2f2f2f;
     font-family: 'Poppins', sans-serif;
 }
-
 .ver-mas {
     margin: 2rem 0;
     display: flex;
@@ -623,7 +681,6 @@ pre[class*=language-] {
     border: 1px solid rgb(255, 255, 255);
     background-color: rgb(225, 225, 225);
 }
-
 .ver-mas:hover {
     cursor: pointer;
     background: rgb(211, 211, 211);
