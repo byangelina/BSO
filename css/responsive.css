@@ -1,0 +1,333 @@
+
+/*menu responsive*/
+#icon-menu{
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 20px;
+    background: #f0f0f0fa;
+    border-radius: 10px;
+    color: #787878;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+#icon-menu img{
+    width: 32px;
+    height: 32px;
+}
+#icon-menu:hover{
+    background: #e1e1e1;
+}
+
+
+
+
+/*mobile*/
+/*de 0 a 480px*/
+
+@media screen and (max-width: 480px) {
+    .header-content{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        padding: 1rem;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+    .logo img {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    /* height: 100%; */
+    /* padding-right: 3rem; */
+    }
+
+nav{
+    display: none;
+}
+
+    #icon-menu{
+        position: absolute;
+        right: 20px;
+        top: 16px;
+        font-size: 20px;
+        background: #f0f0f0fa;
+        border-radius: 10px;
+        color: #787878;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+}
+
+
+.icono-texto {
+    padding: 5rem 10rem;
+    margin: 7rem 4rem 4rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.123);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+    cursor: default;
+}
+
+.icono-texto a h3 {
+    font-weight: 500;
+    margin-bottom: 0;
+    color: rgb(90, 90, 90);
+    font-size: 1.8rem;
+}
+
+a {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+
+.introduccion {
+    padding: 50% 13% 10%;
+}
+.texto-intro h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(158, 200, 255);
+    margin: 2rem 0 3rem;
+}
+.texto-intro p {
+    font-weight: 200;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.boton .cv a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    justify-content: center;
+}
+.final-texto {
+    font-weight: 200;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.pie-de-pagina {
+    padding: 8% 13% 2rem;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+.titulo-presentacion {
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+.pie-de-pagina p {
+    font-size: 1.4rem;
+}
+.titulo-contacto {
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-align: right;
+}
+.contenido-rrss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-rrss a {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+.rrss-y-texto {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+.titulo-contacto {
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-align: center;
+}
+.presentacion-breve{
+    text-align: center;
+}
+.contenido-rrss a {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+
+    .portada{
+        background-image: url("/img/mobile/benja14.png");
+        position: relative;
+        width: 100%;
+        height: 95vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .portada .titulos h2 {
+        margin: 0;
+        font-size: 4rem;
+        padding: 2rem 2rem 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        
+    }
+    .titulos p {
+        font-size: 1.9rem;
+        padding: 0.5rem 2rem 2rem;
+        font-weight: 300;
+        margin: 0;
+    }
+    .portada .titulos {
+        padding-top: 20%;
+        padding-left: 8%;
+        color: rgb(70, 70, 70);
+        
+    }
+    .titulos h2 {
+        white-space: normal;
+        width: auto;
+        animation: none;
+        /* Deshabilitar la animación por defecto */
+    }
+
+    @keyframes typing-benjamin {
+        0% {
+            width: 0;
+        }
+
+        50% {
+            width: 50%;
+        }
+    }
+
+    @keyframes typing-solis {
+        0% {
+            width: 0;
+        }
+
+        50% {
+            width: 50%;
+        }
+    }
+
+    .titulos h2:nth-child(1) {
+        animation: typing-benjamin 2s steps(8), blink .5s infinite step-end alternate;
+    }
+
+    .titulos h2:nth-child(2) {
+        animation: typing-solis 2s steps(5), blink .5s infinite step-end alternate;
+    }
+
+
+
+    }
+    .contenedores{
+        display: flex;
+
+        align-items: flex-end;
+        align-content: flex-end;
+        justify-content: center;
+        padding: 100% 0;
+    }
+
+
+
+
+
+
+
+/*
+@media screen and (max-width: 1220px) {
+
+    .header-content{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1020px) {
+
+    .header-content
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tablets*/
+/*de 480 a 960*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*escritorio*/
+/*960 a más*/

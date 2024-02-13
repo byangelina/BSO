@@ -2,33 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Breve descripción de tu sitio web">
     <meta name="keywords" content="Palabras clave relacionadas con tu contenido">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo/logo4.png" alt="logo BSO">
-        </div>
-        <nav>
-            
-            <ul>
-                <li><a href="index.html"><span>Inicio</span></a></li>
-                <li><a href="./pages/papers.html">Papers</a></li>
-                <li><a href="./pages/actividades.html">CV</a></li>
-                <li><a href="./pages/codigo.html">Código</a></li>
-                <li><a href="./pages/apuntes.html">Apuntes</a></li>
-                <li><a href="#" id="cursos-link">Cursos</a></li>
-            </ul>
-            <div id="searchform-dropdown" class="header-searchform-wrap clr">
-                <form method="get" class="searchform" id="searchform" action="https://benjaminmoll.com/">
-                    <input type="text" class="field" name="s" id="s" placeholder="Search">
-                </form>
+        <div class="header-content">
+            <div class="logo">
+                <img src="img/logo/logo4.png" alt="logo BSO">
             </div>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span>Inicio</span></a></li>
+                    <li><a href="./pages/papers.html">Papers</a></li>
+                    <li><a href="./pages/actividades.html">CV</a></li>
+                    <li><a href="./pages/codigo.html">Código</a></li>
+                    <li><a href="./pages/apuntes.html">Apuntes</a></li>
+                    <li><a href="#" id="cursos-link">Cursos</a></li>
+                </ul>
+                <div id="searchform-dropdown" class="header-searchform-wrap clr">
+                    <form method="get" class="searchform" id="searchform" action="https://benjaminmoll.com/">
+                        <input type="text" class="field" name="s" id="s" placeholder="Search">
+                    </form>
+                </div>
+            </nav>
+
+            <div id="icon-menu">
+                <img src="img/iconos/menu.png" alt="" srcset="">
+            </div>
+
+        </div>
     </header>
 
     <!-- Ventana emergente para "Cursos" -->
@@ -42,41 +50,37 @@
     </div>
 
 
-    <main>
+
         <section>        
             <!--en url ('img/portada/ aqui va el nombre de la imagen.png <3')-->
-            <div class="portada" 
-            style="background-image: url('img/portada/benja13.png');">
+            <div class="portada">
                 <div class="titulos">
                     <h2>Benjamín Solís</h2>
                     <p>Economía y finanzas</p>
                 </div>
-
-            
-            <div class="contenedores">
-                <div class="icono-texto">
-                    <a href="./pages/papers.html">
-                        <img src="img/iconos/publicacion.png" alt="icono">
-                        <h3>Papers</h3>
-                    </a>
-                </div>
-                <div class="icono-texto">
-                    <a href="./pages/lecturas.html">
-                        <img src="img/iconos/libro-abierto.png" alt="icono">
-                        <h3>Lecturas</h3>
-                    </a>
-                </div>
-                <div class="icono-texto">
-                    <a href="./pages/codigo.html">
-                        <img src="img/iconos/codificacion-web.png" alt="icono">
-                        <h3>Código</h3>
-                    </a>
-                </div>
-            </div>   
-
+                <div class="contenedores">
+                    <div class="icono-texto">
+                        <a href="./pages/papers.html">
+                            <img src="img/iconos/publicacion.png" alt="icono">
+                            <h3>Papers</h3>
+                        </a>
+                    </div>
+                    <div class="icono-texto">
+                        <a href="./pages/lecturas.html">
+                            <img src="img/iconos/libro-abierto.png" alt="icono">
+                            <h3>Lecturas</h3>
+                        </a>
+                    </div>
+                    <div class="icono-texto">
+                        <a href="./pages/codigo.html">
+                            <img src="img/iconos/codificacion-web.png" alt="icono">
+                            <h3>Código</h3>
+                        </a>
+                    </div>
+                </div>   
             </div> 
         </section>
-    </main>
+
 
     <section class="introduccion">
         <div class="fondo-vacio">
