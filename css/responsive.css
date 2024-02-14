@@ -257,18 +257,13 @@ a {
     }
 
 
-
-    }
-    .contenedores{
-        display: flex;
-
-        align-items: flex-end;
-        align-content: flex-end;
-        justify-content: center;
-        padding: 80% 0;
-    }
-
-
+.contenedores {
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: center;
+    padding: 30% 0;
+}
 
 
 
@@ -339,4 +334,4 @@ a {
 
 
 /*escritorio*/
-/*960 a más*/
+/*960 a más*/}
