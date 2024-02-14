@@ -54,7 +54,7 @@ nav ul li a span{
 
 /*portada benjita*/
 .portada {
-    background-image: url("/img/portada/benja13.png");
+    background-image: url(".././img/portada/benja13.png");
     position: relative;
     width: 100%;
     height: 50vh;
