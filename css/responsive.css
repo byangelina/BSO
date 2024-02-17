@@ -23,36 +23,29 @@
 }
 
 
-
-
 /*mobile*/
 /*de 0 a 480px*/
-
 @media screen and (max-width: 480px) {
-    .header-content{
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .logo {
+    nav {
         padding: 1rem;
         margin: 0;
         display: flex;
         align-items: flex-start;
     }
-    .logo img {
+    header{
+        padding: 3rem;
+        margin: 0;
+    }
+    nav img {
         display: flex;
         align-items: center;
         padding: 1rem;
     /* height: 100%; */
     /* padding-right: 3rem; */
     }
-
-nav{
-    display: none;
-}
-
+    nav{
+        display: none;
+    }
     #icon-menu{
         position: absolute;
         right: 20px;
@@ -67,132 +60,107 @@ nav{
         padding: 10px;
         display: flex;
         align-items: center;
-}
+    }
 
-
-.icono-texto {
-    padding: 5rem 10rem;
-    margin: 7rem 4rem 4rem;
-    background-color: rgb(255, 255, 255);
-    border: 1px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.123);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-    overflow: hidden;
-    cursor: default;
-    transition: all 400ms ease;
-    cursor: default;
-}
-
-.icono-texto a h3 {
-    font-weight: 500;
-    margin-bottom: 0;
-    color: rgb(90, 90, 90);
-    font-size: 1.8rem;
-}
-
-a {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-decoration: none;
-    align-items: center;
-}
-
-.introduccion {
-    padding: 55% 13% 10%;
-}
-.texto-intro h1 {
-    font-weight: 600;
-    font-size: 2rem;
-    color: rgb(158, 200, 255);
-    margin: 2rem 0 3rem;
-}
-.texto-intro p {
-    font-weight: 200;
-    font-size: 1.4rem;
-    text-align: justify;
-    margin-bottom: 2rem;
-}
-.boton .cv a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 400;
-    justify-content: center;
-}
-.final-texto {
-    font-weight: 200;
-    font-size: 1.4rem;
-    text-align: justify;
-    margin-bottom: 2rem;
-}
-
-.pie-de-pagina {
-    padding: 8% 13% 2rem;
-    background-color: rgb(37, 37, 37);
-    color: white;
-}
-.titulo-presentacion {
-    font-weight: 600;
-    font-size: 1.9rem;
-}
-.pie-de-pagina p {
-    font-size: 1.4rem;
-}
-.titulo-contacto {
-    font-weight: 600;
-    font-size: 1.9rem;
-    text-align: right;
-}
-.contenido-rrss {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contenido-rrss a {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-decoration: none;
-    align-items: center;
-}
-.rrss-y-texto {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
-    align-items: center;
-}
-.titulo-contacto {
-    font-weight: 600;
-    font-size: 1.9rem;
-    text-align: center;
-}
-.presentacion-breve{
-    text-align: center;
-}
-.contenido-rrss a {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-decoration: none;
-    align-items: center;
-}
-
-
-
+    .icono-texto a h3 {
+        font-weight: 500;
+        margin-bottom: 0;
+        color: rgb(90, 90, 90);
+        font-size: 1.8rem;
+    }
+    a {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-decoration: none;
+        align-items: center;
+    }
+    .introduccion {
+        padding: 55% 13% 10%;
+    }
+    .texto-intro h1 {
+        font-weight: 600;
+        font-size: 2rem;
+        color: rgb(158, 200, 255);
+        margin: 2rem 0 3rem;
+    }
+    .texto-intro p {
+        font-weight: 200;
+        font-size: 1.4rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+    .boton .cv a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        justify-content: center;
+    }
+    .final-texto {
+        font-weight: 200;
+        font-size: 1.4rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+    .pie-de-pagina {
+        padding: 8% 13% 2rem;
+        background-color: rgb(37, 37, 37);
+        color: white;
+    }
+    .titulo-presentacion {
+        font-weight: 600;
+        font-size: 1.9rem;
+    }
+    .pie-de-pagina p {
+        font-size: 1.4rem;
+    }
+    .titulo-contacto {
+        font-weight: 600;
+        font-size: 1.9rem;
+        text-align: right;
+    }
+    .contenido-rrss {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenido-rrss a {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-decoration: none;
+        align-items: center;
+    }
+    .rrss-y-texto {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+        align-items: center;
+    }
+    .titulo-contacto {
+        font-weight: 600;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .presentacion-breve{
+        text-align: center;
+    }
+    .contenido-rrss a {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-decoration: none;
+        align-items: center;
+    }
     .portada{
         background-image: url("../img/mobile/benja14.png");
         position: relative;
@@ -227,34 +195,78 @@ a {
         animation: none;
         /* Deshabilitar la animación por defecto */
     }
-
     @keyframes typing-benjamin {
         0% {
             width: 0;
         }
-
         50% {
             width: 50%;
         }
     }
-
     @keyframes typing-solis {
         0% {
             width: 0;
         }
-
         50% {
             width: 50%;
         }
     }
-
     .titulos h2:nth-child(1) {
         animation: typing-benjamin 2s steps(8), blink .5s infinite step-end alternate;
     }
-
     .titulos h2:nth-child(2) {
         animation: typing-solis 2s steps(5), blink .5s infinite step-end alternate;
     }
+
+
+
+
+
+
+
+
+/* Aplicamos la animación a cada icono */
+.icono-texto {
+    opacity: 0;
+    /* Inicialmente, ocultamos todos los iconos */
+    position: absolute;
+    /* Colocamos los iconos en posición absoluta para que no se superpongan */
+
+
+    /* Ajusta estos valores según sea necesario */
+    width: 200px;
+    /* Ancho de cada icono */
+    margin: 20% 5% 30% 5%;
+    /* Espacio entre cada icono */
+    animation: slideAnimation 15s infinite linear;
+        /* Cambiamos la duración a 15 segundos y el modo de la animación a linear */
+    /* Transición suave para el desplazamiento */
+    white-space: nowrap;
+    /* Evitar que los elementos se dividan en varias líneas */
+    display: inline-block;
+    /* Para asegurar que cada elemento tenga un ancho fijo */
+}
+
+
+
+/* Aplicamos la animación a cada icono */
+.icono-texto:nth-child(1) {
+    animation: slideAnimation 15s infinite 0s;
+}
+
+/* Papers aparece primero */
+.icono-texto:nth-child(2) {
+    animation: slideAnimation 15s infinite 5s;
+}
+
+/* Readings aparece después */
+.icono-texto:nth-child(3) {
+    animation: slideAnimation 15s infinite 10s;
+}
+
+/* Code aparece por último */
+
+
 
 
 .contenedores {
@@ -262,10 +274,44 @@ a {
     align-items: flex-end;
     align-content: flex-end;
     justify-content: center;
-    padding: 52% 0;
+    padding: 0;
+    overflow: hidden;
+    /* Para ocultar los elementos que se desplazarán */
+    margin-top: calc(100vh - 7rem);
+    /* Ajusta el margen superior según sea necesario */
 }
 
 
+/* Definimos la animación */
+@keyframes slideAnimation {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    /* Los iconos están completamente ocultos y fuera de la pantalla al principio y al final */
+    5%,
+    25% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    /* Cada icono se muestra durante 0.5 segundos */
+    30%,
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    /* Cada icono se oculta hacia la izquierda durante 0.5 segundos */
+}
+
+
+
+
+}
 
 
 
@@ -334,4 +380,4 @@ a {
 
 
 /*escritorio*/
-/*960 a más*/}
+/*960 a más*/
