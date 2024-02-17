@@ -10,13 +10,13 @@ body{
 
 
 /*menu del sitio web*/
-.logo img{
+nav img{
     width: 280px;
     height: 100%;
     padding-right: 3rem;
 }
-.logo{
-    padding: 0;
+header{
+    padding: 12px;
     margin: 0;
 }
 .header-content{
@@ -26,9 +26,10 @@ body{
     justify-content: space-around;
     padding: 0.5rem 3rem 0.3rem;
 }
-nav{
+nav {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 a{
     margin: 10px;
