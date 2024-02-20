@@ -1,8 +1,8 @@
 
-/*menu responsive*/
-#icon-menu{
+/* definición de menu responsive*/
+#icon-menu {
     position: absolute;
-    right: 20px;
+    right: auto;
     top: 16px;
     font-size: 20px;
     background: #f0f0f0fa;
@@ -12,263 +12,157 @@
     align-items: center;
     cursor: pointer;
     padding: 10px;
-    display: none;
+    display: block;
 }
-#icon-menu img{
-    width: 32px;
-    height: 32px;
+
+#icon-menu img {
+    width: 24px;
+    height: 24px;
 }
-#icon-menu:hover{
+
+#icon-menu:hover {
     background: #e1e1e1;
 }
 
 
-/*mobile*/
-/*de 0 a 480px*/
+/*mobile: de 0 a 480px*/
+
+/*TODO: PAGINA HOME*/
 @media screen and (max-width: 480px) {
+
+    /*//! menú del sitio web*/
+    header {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+
     nav {
         padding: 1rem;
         margin: 0;
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
     }
-    header{
-        padding: 3rem;
-        margin: 0;
-    }
+
     nav img {
         display: flex;
         align-items: center;
         padding: 1rem;
-    /* height: 100%; */
-    /* padding-right: 3rem; */
     }
-    nav{
+
+    nav ul {
         display: none;
+        position: fixed;
+        top: 120px;
+        left: -100vw;
+        background-color: #ffffff;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.123);
+        z-index: 1000;
+        width: 100%;
+        transition: left 0.3s ease;
+
     }
-    #icon-menu{
+
+    nav ul.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    nav ul.open li {
+        padding: 0 0;
+    }
+
+    nav ul li a {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-decoration: none;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+
+    /*icono del menu desplegable móvil*/
+    #icon-menu {
         position: absolute;
         right: 20px;
-        top: 16px;
-        font-size: 20px;
+        top: 35px;
+        font-size: 10px;
         background: #f0f0f0fa;
         border-radius: 10px;
         color: #787878;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        padding: 10px;
+        padding: 5px;
         display: flex;
         align-items: center;
     }
 
-    .icono-texto a h3 {
-        font-weight: 500;
-        margin-bottom: 0;
-        color: rgb(90, 90, 90);
-        font-size: 1.8rem;
-    }
-    a {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        text-decoration: none;
-        align-items: center;
-    }
-    .introduccion {
-        padding: 55% 13% 10%;
-    }
-    .texto-intro h1 {
-        font-weight: 600;
-        font-size: 2rem;
-        color: rgb(158, 200, 255);
-        margin: 2rem 0 3rem;
-    }
-    .texto-intro p {
-        font-weight: 200;
-        font-size: 1.4rem;
-        text-align: justify;
-        margin-bottom: 2rem;
-    }
-    .boton .cv a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.5rem;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.4rem;
-        font-weight: 400;
-        justify-content: center;
-    }
-    .final-texto {
-        font-weight: 200;
-        font-size: 1.4rem;
-        text-align: justify;
-        margin-bottom: 2rem;
-    }
-    .pie-de-pagina {
-        padding: 8% 13% 2rem;
-        background-color: rgb(37, 37, 37);
-        color: white;
-    }
-    .titulo-presentacion {
-        font-weight: 600;
-        font-size: 1.9rem;
-    }
-    .pie-de-pagina p {
-        font-size: 1.4rem;
-    }
-    .titulo-contacto {
-        font-weight: 600;
-        font-size: 1.9rem;
-        text-align: right;
-    }
-    .contenido-rrss {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .contenido-rrss a {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        text-decoration: none;
-        align-items: center;
-    }
-    .rrss-y-texto {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 2rem;
-        align-items: center;
-    }
-    .titulo-contacto {
-        font-weight: 600;
-        font-size: 1.9rem;
-        text-align: center;
-    }
-    .presentacion-breve{
-        text-align: center;
-    }
-    .contenido-rrss a {
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        text-decoration: none;
-        align-items: center;
-    }
-    .portada{
-        background-image: url("../img/mobile/benja14.png");
-        position: relative;
-        width: 100%;
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-    }
-    .portada .titulos h2 {
-        margin: 0;
-        font-size: 4rem;
-        padding: 1rem 2rem 0;
-        font-weight: 500;
-        text-transform: uppercase;
-        
-    }
-    .titulos p {
-        font-size: 1.9rem;
-        padding: 0 2rem 2rem;
-        font-weight: 200;
-        margin: 0;
-    }
-    .portada .titulos {
-        padding-top: 0;
-        padding-left: 1rem;
-        color: rgb(70, 70, 70);
-        
-    }
-    .titulos h2 {
-        white-space: normal;
-        width: auto;
-        animation: none;
-        /* Deshabilitar la animación por defecto */
-    }
-    @keyframes typing-benjamin {
-        0% {
-            width: 0;
-        }
-        50% {
-            width: 50%;
-        }
-    }
-    @keyframes typing-solis {
-        0% {
-            width: 0;
-        }
-        50% {
-            width: 50%;
-        }
-    }
-    .titulos h2:nth-child(1) {
-        animation: typing-benjamin 2s steps(8), blink .5s infinite step-end alternate;
-    }
-    .titulos h2:nth-child(2) {
-        animation: typing-solis 2s steps(5), blink .5s infinite step-end alternate;
-    }
 
 
-
-
-
-
-
-
-/* Aplicamos la animación a cada icono */
-.icono-texto {
-    opacity: 0;
-    /* Inicialmente, ocultamos todos los iconos */
-    position: absolute;
-    /* Colocamos los iconos en posición absoluta para que no se superpongan */
-
-
-    /* Ajusta estos valores según sea necesario */
-    width: 200px;
-    /* Ancho de cada icono */
-    margin: 20% 5% 30% 5%;
-    /* Espacio entre cada icono */
-    animation: slideAnimation 15s infinite linear;
-        /* Cambiamos la duración a 15 segundos y el modo de la animación a linear */
-    /* Transición suave para el desplazamiento */
-    white-space: nowrap;
-    /* Evitar que los elementos se dividan en varias líneas */
-    display: inline-block;
-    /* Para asegurar que cada elemento tenga un ancho fijo */
+/*//! portada benjita */
+.portada{
+    background-image: url("../img/mobile/benja14.png");
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.portada .titulos {
+    padding: 5rem 2.5rem 4rem 4rem;
+}
+.portada .titulos h2 {
+    font-size: 4rem;
+    padding: 0; 
+    color: #4d4d4d;
+}
+.portada .titulos p {
+    font-size: 1.8rem;
+    padding: 0;
+    font-weight: 200;
+    color: #838383;
+}
+.titulos h2 {
+    white-space: normal;
+    width: auto;
+    animation: none;
+}
+/*animacion "benjamin solis maquina de escribir"*/
+@keyframes typing-benjamin {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+}
+@keyframes typing-solis {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+}
+.titulos h2:nth-child(1) {
+    animation: typing-benjamin 2s steps(8), blink .5s infinite step-end alternate;
+}
+.titulos h2:nth-child(2) {
+    animation: typing-solis 2s steps(5), blink .5s infinite step-end alternate;
 }
 
 
-
-/* Aplicamos la animación a cada icono */
-.icono-texto:nth-child(1) {
-    animation: slideAnimation 15s infinite 0s;
-}
-
-/* Papers aparece primero */
-.icono-texto:nth-child(2) {
-    animation: slideAnimation 15s infinite 5s;
-}
-
-/* Readings aparece después */
-.icono-texto:nth-child(3) {
-    animation: slideAnimation 15s infinite 10s;
-}
-
-/* Code aparece por último */
-
-
-
-
+/*//! 3 contenedores de iconos*/
 .contenedores {
     display: flex;
     align-items: flex-end;
@@ -276,46 +170,645 @@
     justify-content: center;
     padding: 0;
     overflow: hidden;
-    /* Para ocultar los elementos que se desplazarán */
     margin-top: calc(100vh - 7rem);
-    /* Ajusta el margen superior según sea necesario */
 }
-
-
-/* Definimos la animación */
+.icono-texto {
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    margin: 20% 5% 15% 5%;
+    animation: slideAnimation 15s infinite linear;
+    white-space: nowrap;
+    display: inline-block;
+}
+.icono-texto a h3 {
+    font-weight: 500;
+    margin-bottom: 0;
+    color: rgb(90, 90, 90);
+    font-size: 1.4rem;
+}
+/*animación de 3 iconos*/
+.icono-texto:nth-child(1) {/*Papers*/
+    animation: slideAnimation 15s infinite 0s;
+}
+.icono-texto:nth-child(2) {/*Readings*/
+    animation: slideAnimation 15s infinite 5s;
+}
+.icono-texto:nth-child(3) {/*Code*/
+    animation: slideAnimation 15s infinite 10s;
+}
 @keyframes slideAnimation {
-
     0%,
     100% {
         opacity: 0;
         transform: translateX(100%);
     }
-
-    /* Los iconos están completamente ocultos y fuera de la pantalla al principio y al final */
     5%,
     25% {
         opacity: 1;
         transform: translateX(0%);
     }
-
-    /* Cada icono se muestra durante 0.5 segundos */
     30%,
     100% {
         opacity: 0;
         transform: translateX(-100%);
     }
+}
 
-    /* Cada icono se oculta hacia la izquierda durante 0.5 segundos */
+
+
+/*//! sección de la introducción*/
+.introduccion {
+    padding: 55% 13% 10%;
+}
+.texto-intro h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(158, 200, 255);
+    margin: 2rem 0 3rem;
+    line-height: 2.6rem;
+}
+.texto-intro p {
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+/*botón para descargar CV*/
+.boton .cv a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    justify-content: center;
+}
+/*parrafo abajo del botón para descargar CV*/
+.final-texto {
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+
+/*//! pie de página*/
+.pie-de-pagina {
+    padding: 8% 13% 2rem;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+.pie-de-pagina p {
+    font-size: 1.2rem;
+}
+.presentacion-breve{
+    text-align: center;
+}
+.titulo-presentacion {
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+.rrss-y-texto {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+.redes-sociales {
+    margin: 1rem;
+}
+.titulo-contacto {
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-align: center;
+}
+.contenido-rrss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icono-footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.contenido-rrss a {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+.copyright {
+    text-align: center;
+}
+
+
+/*TODO: PAGINA ACTIVIDADES*/
+.cv-de-actividades{
+    padding: 20% 13% 20%;
+    margin: 0;
+}
+.actividades {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contenido-actividades {
+    padding: 2.5rem 0 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.actividades h1 {
+    font-size: 1.9rem;
+    margin-top: 0;
+    padding-left: 0;
+}
+.contenido-actividades h3 {
+    font-size: 1.2rem;
+    color: #494949;
+}
+.contenido-actividades h4 {
+    font-size: 1.2rem;
+}
+.contenido-actividades p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+.contenido-actividades ul {
+    font-size: 1.2rem;
+}
+
+
+/*TODO: PAGINA APUNTES*/
+.apuntes-mate {
+    padding: 20% 13% 20%;
+    margin: 0;
+}
+.contenido-mate {
+    margin: 0;
+}
+.contenido-mate p {
+    font-size: 1.4rem;
+    margin: 2.5rem 0;
+}
+.img-y-titulo {
+    display: flex;
+    align-items: center;
+}
+.img-y-titulo h1 {
+    margin-right: 1.5rem;
+    font-size: 2rem;
+}
+.img-y-titulo img {
+    width: 80px;
+}
+.contenedor-grid-mate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1.8rem;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.grids-mate {
+    padding: 2% 20% 10%;
+}
+.contenido-proyecto {
+    padding: 4rem;
+    border-radius: 10px;
+}
+.detalles-mate h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #757575;
+    margin-top: 7rem;
+    margin-bottom: 0;
+}
+.detalles-mate {
+    margin: 4rem 0 3rem 0;
+}
+
+/*! fórmulas matemáticas*/
+.katex-html .base {
+    color: #000000 !important;
 }
 
 
 
 
+/*TODO: PAGINA PAPERS*/
+.fondo-titulo h1 {
+    margin: 8% 0 10% 17%;
+}
+.fondo-titulo{
+    margin-top: 4rem;
+}
+
+/*! botón para descargar paper*/
+.descargar-paper img {
+    width: 32px;
+}
+
+/*! gid / lista de papers*/
+.contenido-papers {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 4rem;
+    justify-items: center;   
+    padding: 0;
+}
+.papers{
+    padding-top: 6%;
+    padding-bottom: 20%;   
+    padding-left: 17%;
+    padding-right: 17%;
+}
+.paper {
+    align-items: flex-start;
+    padding: 0;
+}
+.paper p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+.paper h3 {
+    margin: 0;
+}
+hr {
+    width: 0;
+}
+
+
+/*TODO: LECTURAS*/
+/*pagina de lecturas*/
+.lecturas {
+    padding-top: 17%;
+    padding-bottom: 30%;
+    padding-left: 16%;
+    padding-right: 16%;
+}
+.lecturas p {
+    font-size: 1.2rem;
+}
+.lecturas h3 {
+    font-size: 2rem;
+}
+.contenido-documento img {
+    width: 35px;
+}
+.listado-documentos {
+    margin-top: 6rem;
+    justify-items: stretch;
+    align-items: center;
+}
+.fila-1 h4 {
+    font-size: 1.4rem;
+}
+.fila-2 h4,
+.fila-3 h4 {
+    color: #636363;
+    font-size: 1.2rem;
+}
+
+
+/*TODO: PAGINA CODE*/
+.codigo {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 17%;
+    padding-bottom: 20%;   
+    padding-left: 18%;
+    padding-right: 18%;
+}
+.contenido-codigo {
+    margin: 0;
+}
+.contenido-codigo h1 {
+    margin-bottom: 3rem;
+}
+.contenido-codigo p {
+    font-size: 1.2rem;
+}
+
+/*! ladrillos: lenguajes de programacion*/
+.programas {
+    margin: 0;
+}
+.skills__skill {
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+}
+
+/*! codigo desarrollado por benjita*/
+.codigo-desarrollado {
+    padding-top: 17%;
+    padding-bottom: 25%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+
+/*! gid / lista de codigos*/
+.detalles-del-proyecto p {
+    font-size: 1.2rem;
+}
+.nombre-lenguaje-programacion h4 {
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.detalles-del-proyecto {
+    margin: 0;
+}
+.detalles-del-proyecto h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.grafico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.grafico p {
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.grafico p span {
+    color: rgb(122, 159, 202);
+    font-weight: 500;
+}
+.grafico img {
+    width: 450px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*! estilos del editor de codigo*/
+code[class*=language-],
+pre[class*=language-] {
+    background: 0 0;
+    font-size: 1.1rem !important;
+    line-height: 1.3 !important;
+}
+pre[class*=language-] {
+    margin: 0 !important;
+    overflow: scroll;
+}
+pre[class*=language-] {
+    padding: 10px 20px 10px 20px!important;
+
+}
+
+/*! estilos para el botón ver más*/
+.ver-mas a {
+    font-size: 1.2rem;
 }
 
 
 
 
+/*TODO: PAGINA APUNTES*/
+.apuntes-mate {
+    padding-top: 17%;
+    padding-bottom: 25%;
+    padding-left: 16%;
+    padding-right: 16%;
+}
+.contenido-mate {
+    margin: 0;
+}
+.contenido-mate p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 2rem 0 0 0;
+}
+.img-y-titulo {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: flex-start
+}
+.img-y-titulo h1 {
+    margin-right: 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #9ec8ff;
+}
+.contenido-mate p span {
+    color: rgb(124, 171, 224);
+    font-weight: 500;
+}
+.img-y-titulo img {
+    width: 90px;
+}
+.contenedor-grid-mate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1.8rem;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.grids-mate {
+    padding: 2% 20% 10%;
+}
+.contenido-proyecto {
+    background-color: rgb(242, 242, 242);
+    padding: 4rem;
+    border-radius: 10px;
+}
+.contenedor-proyecto h4 {
+    color: black;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.detalles-mate a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #757575;
+    margin: 0 0 0 0;
+}
+.detalles-mate h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #757575;
+    margin: 0;
+}
+/*.detalles-mate a:hover{
+    color:rgb(137, 179, 235);
+}*/
+.detalles-mate {
+    margin: 5rem 0 5rem 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*! fórmulas matemáticas*/
+.katex-html .base {
+    color: #000000 !important;
+}
+.cart-detalles {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.8rem;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.089);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+
+}
+.cart-detalles:hover {
+    transform: scale(1.03);
+}
+.img-cart img {
+    width: 150px;
+    margin: 0.5rem;
+}
+.texto-cart {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+.texto-cart a:hover {
+    color: #7ea7e1;
+}
+.texto-cart h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #757575;
+}
+a{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/*TODO: PAGINA ECONOMIA*/
+.cart-detalles-proyects {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.cart-detalles-proyects a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #757575;
+    margin: 0;
+}
+.cart-detalles-proyects a:hover {
+    color: #7ea7e1;
+}
+.contenido-mate h1 {
+    margin: 2rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #9ec8ff;
+}
+.cart-detalles-proyects .grafico img {
+    width: 450px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 5px;
+    margin-left: 5px;
+
+
+}
+.cart-detalles-proyects p {
+    margin: 0.4rem 0 0 0;
+}
+.cart-detalles p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.contenido-mate hr {
+    width: 100%;
+}
+.cart-detalles-proyects .grafico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
+/*TODO: PAGINA CURSOS o BOTON EMERGENTE*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.352);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.383);
+    text-align: center;
+    position: relative;
+    margin: 2rem;
+}
+.popup img {
+    width: 70px;
+}
+.popup h2 {
+    font-weight: 500;
+    color: rgb(138, 192, 240);
+    margin-top: 3px;
+    font-size: 1.8rem;
+}
+.popup p {
+    margin: 10px;
+    font-size: 1.2rem;
+    color: #494949;
+    font-weight: 300;
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #a2a8af;
+}
+}
+
+
+
+/*mobile: de 0 a 480px*/
+
+/*TODO: PAGINA HOME*/
+@media screen and (max-width: 960px) {
 
 
 
@@ -324,60 +817,12 @@
 
 
 
-
+}
 /*
 @media screen and (max-width: 1220px) {
 
-    .header-content{
-        max-width: 1000px;
-        padding: 0 20px;
-    }
-    
-}
-
-@media screen and (max-width: 1020px) {
-
-    .header-content
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*tablets*/
 /*de 480 a 960*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*escritorio*/
 /*960 a más*/

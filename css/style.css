@@ -28,9 +28,11 @@ a{
     margin: 10px;
     text-decoration: none;
 }
-nav ul{
-    display: flex;
+
+nav ul {
+    display: none;
 }
+
 nav ul li{
     margin: 0.5rem;
     list-style: none;
@@ -121,21 +123,20 @@ color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
     align-items: center;
-
     overflow: hidden;
-    cursor: default;
     transition: all 400ms ease;
-    cursor: default;
 }
 .contenedores .icono-texto:hover {
     background-color: #242424;
     transform: scale(0.93);
-    cursor: pointer;
-    color: white;   
-    }
-.contenedores .icono-texto h3:hover{
-    cursor:default;
+    cursor:pointer;
+}
+.icono-texto a:hover{
     color: white;
+}
+.contenedores .icono-texto h3:hover{
+    color: rgb(255, 255, 255);
+    cursor: auto;
 }
 .icono-texto a h3{
     font-weight: 500;
@@ -145,6 +146,13 @@ color: rgb(255, 255, 255);
 .icono-texto a img{
     width: 75px;
     margin: 0;
+}
+.icono-texto a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 /*.fondo-vacio{
     background-color: rgb(59, 59, 59);
@@ -222,28 +230,20 @@ color: rgb(255, 255, 255);
     background-color: rgb(37, 37, 37);
     color: white;
 }
+.pie-de-pagina p{
+    font-size: 1.2rem;
+}
 .titulo-presentacion{
     font-weight: 600;
     font-size: 1.8rem;
 }
-.titulo-contacto{
-    font-weight: 600;
-    font-size: 1.8rem;
-    text-align: right;
-}
-.pie-de-pagina p{
-    font-size: 1.2rem;
+.redes-sociales{
+    margin: 1rem;
 }
 .rrss-y-texto{
     display: flex;
     justify-content: flex-end;
     padding-bottom: 2rem;
-}
-.parrafo-breve{
-    font-weight: 200;
-}
-.redes-sociales{
-    margin: 1rem;
 }
 .contenido-rrss{
     display: flex;
@@ -252,6 +252,14 @@ color: rgb(255, 255, 255);
 }
 .contenido-rrss a{
     margin-left: 3rem;
+}
+.titulo-contacto{
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: right;
+}
+.parrafo-breve{
+    font-weight: 200;
 }
 .copyright{
     text-align: center;
@@ -278,6 +286,7 @@ color: rgb(255, 255, 255);
     font-size: 1.8rem;
     font-weight: 600;
     margin:0 0 0 20%;
+    color: rgb(158, 200, 255);
 }
 .papers h3{
     text-align: left;
@@ -333,9 +342,9 @@ color: rgb(255, 255, 255);
     font-weight: 200;
 }
 .paper h3{
-    font-size: 1.8rem;
-    font-weight: 600;
-    color:rgb(158, 200, 255);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:rgb(131, 131, 131)
 }
 hr{
     width:60%;
@@ -425,7 +434,7 @@ hr{
 .contenido-mate p{
     font-size: 1.1rem;
     font-weight: 200;
-    margin: 2rem;
+    margin: 2rem 0 0 0;
 }
 .img-y-titulo{
     display: flex;
@@ -436,7 +445,7 @@ hr{
     margin-right: 2rem;
     font-weight: 600;
     font-size: 1.8rem;
-    color: rgb(158, 200, 255);
+    color: #9ec8ff;
 }
 .contenido-mate p span{
     color:rgb(124, 171, 224);
@@ -468,18 +477,108 @@ hr{
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
-.detalles-mate h3{
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: #666;
+.detalles-mate a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #757575;
+    margin: 0;
 }
+.detalles-mate h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #757575;
+    margin: 0;
+}
+/*.detalles-mate a:hover{
+    color:rgb(137, 179, 235);
+}*/
 .detalles-mate{
-    margin: 4rem 0 3rem 0;
+    margin: 5rem 0 5rem 0;
 }
 /*fórmulas matemáticas*/
 .katex-html .base{
     color: #000000 !important;
 }
+.cart-detalles{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.089);
+    transition: transform 0.3s ease;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-detalles:hover {
+    transform: scale(1.03);
+}
+.img-cart img{
+    width: 150px;
+    margin: 2rem;
+}
+.texto-cart{
+    margin: 1rem 2.5rem 1rem 2.5rem;
+}
+
+.texto-cart a:hover{
+    color: #7ea7e1;
+}
+.texto-cart h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #757575;
+}
+
+
+/*economia*/
+.cart-detalles-proyects {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem ;
+}
+.cart-detalles-proyects a{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #757575;
+    margin: 0;
+}
+.cart-detalles-proyects a:hover{
+    color: #7ea7e1;
+}
+
+.contenido-mate h1{
+    margin: 2rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #9ec8ff;
+}
+.cart-detalles-proyects .grafico img {
+    width: 50%;
+    margin: 2.5rem;
+
+}
+.cart-detalles-proyects p{
+    margin: 0.4rem 0 0 0 ;
+}
+.cart-detalles p{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.contenido-mate hr{
+    width: 100%;
+}
+.cart-detalles-proyects .grafico{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 2rem;
+}
+
+
+
+
 
 
 /*página código*/
@@ -519,7 +618,7 @@ hr{
 .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem
+    grid-gap: 10rem;
 }
 .about__content-title {
     font-weight: 500;
@@ -535,7 +634,7 @@ hr{
     color: #666;
     max-width: 60rem;
     line-height: 1.7;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 .about__content-details-para--hl {
     font-weight: 700;
@@ -593,12 +692,25 @@ hr{
     font-weight: 500;
 }
 .el-codigo {
-    background-color: #f0f0f0;
     border-radius: 10px;
     color: rgb(54, 54, 54);
-    padding: 0.5rem;
-    margin: 2rem 2rem 4rem;
+    margin: 6rem 0;
     }
+.nombre-lenguaje-programacion{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:rgb(221, 221, 221);
+    border-radius: 10px 10px 0 0;
+}
+.nombre-lenguaje-programacion h4{
+    margin: 5px 30px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
 .el-codigo p {
     text-align: left;
     font-size: 1rem;
@@ -657,12 +769,12 @@ hr {
 /*estilos del editor de codigo*/
 code[class*=language-],
 pre[class*=language-] {
-    color: #ccc;
+    color: #7fb2e2 !important;
     background: 0 0;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 0.9rem !important;
     text-align: left;
-    white-space: pre;
+    white-space: pre-line !important;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
@@ -675,15 +787,21 @@ pre[class*=language-] {
     -ms-hyphens: none;
     hyphens: none;
 }
-:not(pre)>code[class*=language-],
 pre[class*=language-] {
-    background: #ffffff;
+    padding: 3em !important;
+    margin: 0 !important;
+    overflow: scroll;
+    max-height:500px;
 }
 pre[class*=language-] {
     padding: 1em;
     margin: 0.5em 0;
-    overflow: scroll;
-    max-height:600px;
+    overflow: auto;
+    border-radius: 10px;
+}
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+    background: rgb(250, 250, 250) !important;
 }
 
 
@@ -750,6 +868,18 @@ pre[class*=language-] {
     font-weight: 600;
     color: rgb(124, 171, 224);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
