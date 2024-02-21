@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     display: none;
 }
 
@@ -51,7 +51,8 @@
     nav img {
         display: flex;
         align-items: center;
-        padding: 1rem;
+        padding: 0.5rem;
+        width: 200px;
     }
 
     nav ul {
@@ -114,7 +115,7 @@
     background-image: url("../img/mobile/benja14.png");
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     background-size: cover;
     background-position: center;
 }
@@ -122,12 +123,13 @@
     padding-top: 2rem;
     padding-bottom: 4rem;
     padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-right: 3.7rem;
 }
 .portada .titulos h2 {
     font-size: 3.5rem;
     padding: 0; 
     color: #4d4d4d;
+    line-height: 1.2;
 }
 .portada .titulos p {
     font-size: 1.7rem;
@@ -188,7 +190,7 @@
     display: inline-block;    
 
     margin-top: 5%;
-    margin-bottom: 50%;
+    margin-bottom: 55%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -322,8 +324,11 @@
 
 /*TODO: PAGINA ACTIVIDADES*/
 .cv-de-actividades{
-    padding: 20% 13% 20%;
     margin: 0;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 .actividades {
     padding: 0;
@@ -422,10 +427,13 @@
 
 /*TODO: PAGINA PAPERS*/
 .fondo-titulo h1 {
-    margin: 8% 0 10% 17%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    margin-left: 12%;
+    margin-right: 0;
 }
 .fondo-titulo{
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 /*! botón para descargar paper*/
@@ -444,8 +452,8 @@
 .papers{
     padding-top: 6%;
     padding-bottom: 20%;   
-    padding-left: 17%;
-    padding-right: 17%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 .paper {
     align-items: flex-start;
@@ -500,10 +508,11 @@ hr {
 .codigo {
     flex-direction: column;
     align-items: center;
-    padding-top: 17%;
-    padding-bottom: 20%;   
-    padding-left: 18%;
-    padding-right: 18%;
+
+    padding-top: 5%;
+    padding-bottom: 15%;   
+    padding-left: 12%;
+    padding-right: 12%;
 }
 .contenido-codigo {
     margin: 0;
@@ -520,16 +529,16 @@ hr {
     margin: 0;
 }
 .skills__skill {
-    padding: 0.9rem 2rem;
+    padding: 1rem 2.5rem;
     font-size: 1.1rem;
 }
 
 /*! codigo desarrollado por benjita*/
 .codigo-desarrollado {
-    padding-top: 17%;
-    padding-bottom: 25%;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 
@@ -598,10 +607,10 @@ pre[class*=language-] {
 
 /*TODO: PAGINA APUNTES*/
 .apuntes-mate {
-    padding-top: 17%;
+    padding-top: 5%;
     padding-bottom: 25%;
-    padding-left: 16%;
-    padding-right: 16%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 .contenido-mate {
     margin: 0;
@@ -694,7 +703,7 @@ pre[class*=language-] {
     transform: scale(1.03);
 }
 .img-cart img {
-    width: 150px;
+    width: 130px;
     margin: 0.5rem;
 }
 .texto-cart {

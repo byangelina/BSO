@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Benjamín Solís Commercial and Finance Engineer">
+    <meta name="keywords" content="
+            Finanzas
+            Macroeconomía 
+            Microeconomía
+            Programación 
+            Apuntes de Economía
+            Cursos 
+            Análisis de datos
+            Matemática">
+    <title>Benjamín Solís Portfolio | Commercial and Finance Engineer</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '\\begin{equation}', right: '\\end{equation}', display: true },
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false }
+                ]
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/responsive.css">
+    <link rel="stylesheet" href="../../../prism/prism.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../../../img/logo/logo4.png" alt="logo BSO">
+            <ul>
+                <li><a href="../../../index.html"><span>Home</span></a></li>
+                <li><a href="../../papers.html">Papers</a></li>
+                <li><a href="../../actividades.html">CV</a></li>
+                <li><a href="../../codigo.html">Code</a></li>
+                <li><a href="../../apuntes.html">Notes</a></li>
+                <li><a href="#" id="cursos-link">Courses</a></li>
+            </ul>
+            <div id="icon-menu">
+                <img src="../../../img/iconos/menu.png" alt="" srcset="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ventana emergente para "Cursos" -->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="close-btn" onclick="closePopup()">X</span>
+            <img src="../../../img/iconos/cerrar-ojo.png" alt="">
+            <h2>Soon</h2>
+            <p>I'm working on this section. Come back soon!</p>
+        </div>
+    </div>
+
+    <section class="apuntes-mate">
+        <div class="contenido-mate">
+            <h1>Nombre del proyecto</h1>
+            <div class="cart-detalles-proyects">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur <span>adipisicing elit.</span> Quia fugiat ad non atquerepellat obcaecati. Lorem ipsum dolor, <span>sit amet</span> consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati molestias, corporis quo? Aut, at similique! Qui molestias autem eos porro laboriosam, esse saepe recusandae! Odit Lorem ipsum dolor sit <span>amet consectetur.Lorem ipsum dolor sit, </span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span>
+                </p>
+                <div class="grafico">
+                    <img src="../../../img/graficos-codigo/1.PNG" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur <span>adipisicing elit.</span> Quia fugiat ad non atquerepellat obcaecati. Lorem ipsum dolor, <span>sit amet</span> consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati molestias, corporis quo? Aut, at similique! Qui molestias  autem eos porro laboriosam, esse saepe recusandae! Odit Lorem ipsum dolor sit <span>amet consectetur.Lorem ipsum dolor sit, </span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span>
+                </p>
+                <div class="grafico">
+                    <img src="../../../img/graficos-codigo/2.png" alt="">
+
+                    <img src="../../../img/graficos-codigo/3.png" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur <span>adipisicing elit.</span> Quia fugiat ad non atquerepellat obcaecati. Lorem ipsum dolor, <span>sit amet</span> consectetur adipisicing elit. Quod, vitae. Nulla eligendi veniam obcaecati molestias, corporis quo? Aut, at similique! Qui molestias autem eos porro laboriosam, esse saepe recusandae! Odit Lorem ipsum dolor sit <span>amet consectetur.Lorem ipsum dolor sit, </span> at similique! Qui molestias autem eos porro laboriosam, esse <span>saepe</span>
+                </p>
+                <!--el codigo-->
+                <div class="el-codigo">
+                    <div class="nombre-lenguaje-programacion">
+                        <h4>Julia</h4>
+                    </div>
+                    <pre>
+                    <code class="language-julia">
+                        # Comentarios en Julia comienzan con el símbolo '#' y pueden ser de una sola línea o multilinea.
+                        
+                        # Definición de una función en Julia
+                        function saludar(nombre)
+                        println("¡Hola, $nombre!")
+                        end
+                        
+                        # Llamada a la función 'saludar'
+                        saludar("Juan")
+                        
+                        # Definición de un bucle 'for' en Julia
+                        for i in 1:5
+                        println("El valor de i es: $i")
+                        end
+                        
+                        # Definición de una estructura de control 'if-else' en Julia
+                        edad = 25
+                        if edad >= 18
+                        println("Eres mayor de edad.")
+                        else
+                        println("Eres menor de edad.")
+                        end
+                        
+                        # Definición de un arreglo en Julia
+                        arreglo = [1, 2, 3, 4, 5]
+                        
+                        # Iteración sobre los elementos de un arreglo
+                        for elemento in arreglo
+                        println("El elemento actual es: $elemento")
+                        end
+                    </code>
+                </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="pie-de-pagina">
+        <div class="contenedores-texto">
+            <div class="presentacion-breve">
+                <h2 class="titulo-presentacion">Benjamín Solís</h2>
+                <p class="parrafo-breve">
+                    Ingeniero Comercial en mención economía. Se especializa en el ánalisis de datos, lenguajes de
+                    programación y finanzas. Cuenta con Magister en economía y realiza clases como profesor en la
+                    Universidad Alberto Hurtado.
+                </p>
+            </div>
+            <div class="rrss-y-texto">
+                <div class="redes-sociales">
+                    <h2 class="titulo-contacto">
+                        <span>Contacto</span>
+                    </h2>
+                    <div class="contenido-rrss">
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/benjaminsoliso/">
+                            <img class="icono-footer" src="../../../img/iconos/logotipo-de-linkedin.png"
+                                alt="LinkdeIn Benjamín Solís">
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://twitter.com/bsoliso">
+                            <img class="icono-footer" src="../../../img/iconos/logotipos.png"
+                                alt="X twitter Benjamín Solís">
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="">
+                            <img class="icono-footer" src="../../../img/iconos/correo-electronico.png"
+                                alt="Correo electrónico Benjamín Solís">
+                        </a>
+
+                        <a target="_blank" rel="noreferrer" href="">
+                            <img class="icono-footer" src="../../../img/iconos/vapor.png" alt="Steam Benjamín Solís">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="copyright">
+                © Copyright
+                <script>document.write(new Date().getFullYear())</script> Desarrollado por
+                Benjamín Solís</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../javascript/cursos.js"></script>
+    <script src="../../../prism/prism.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
