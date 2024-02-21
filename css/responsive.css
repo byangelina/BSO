@@ -41,7 +41,10 @@
     }
 
     nav {
-        padding: 1rem;
+        padding-top: 0.6rem;
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
+        margin-right: 0;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -115,7 +118,7 @@
     background-image: url("../img/mobile/benja14.png");
     position: relative;
     width: 100%;
-    height: 75vh;
+    height: 85vh;
     background-size: cover;
     background-position: center;
 }
@@ -189,8 +192,8 @@
     white-space: nowrap;
     display: inline-block;    
 
-    margin-top: 20%;
-    margin-bottom: 50%;
+    margin-top: 15%;
+    margin-bottom: 18%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -232,7 +235,7 @@
 
 /*//! sección de la introducción*/
 .introduccion {
-    padding: 55% 13% 10%;
+    padding: 60% 13% 10%;
 }
 .texto-intro h1 {
     font-weight: 600;
@@ -325,8 +328,8 @@
 /*TODO: PAGINA ACTIVIDADES*/
 .cv-de-actividades{
     margin: 0;
-    padding-top: 10%;
-    padding-bottom: 20%;
+    padding-top: 0;
+    padding-bottom: 25%;
     padding-left: 12%;
     padding-right: 12%;
 }
